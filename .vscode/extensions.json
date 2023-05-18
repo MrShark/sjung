@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "njpwerner.autodocstring",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.isort",
+        "elagil.pre-commit-helper",
+        "ms-python.pylint",
+        "ms-python.python",
+        "batisteo.vscode-django"
+    ]
+}
