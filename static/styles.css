@@ -1,0 +1,103 @@
+/* Reset default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(39, 100%, 90%);
+}
+
+header {
+    background-color: hsl(39, 100%, 50%);
+    color: #000000;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    background-color: hsl(39, 100%, 30%);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: hsl(39, 100%, 10%);
+
+}
+
+nav ul li a:hover {
+    background-color: hsl(39, 100%, 50%);
+    color: #000;
+
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: hsl(39, 100%, 30%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+.main {
+    width: 75%;
+}
+
+.extra {
+    width: 20%;
+}

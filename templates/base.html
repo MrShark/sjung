@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sjung med oss datorn</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+  {% block extrahead %}{% endblock %}
+</head>
+<body>
+  <header>
+    <h1>Sjung med oss datorn</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Songs</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="main">
+      {% block content %}
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Donec vehicula mauris nec magna facilisis, at lobortis augue sodales.
+        Aenean tincidunt nisl eu eros efficitur, vel pellentesque ex varius.
+      </p>
+      {% endblock %}
+    </section>
+
+    <section class="extra">
+      <h2>Popular Songs</h2>
+      <ul>
+        <li><a class="btn btn-light" href="{% url 'Song_list' %}">Song Listing</a></li>
+
+        <li><a href="#">Song 1</a></li>
+        <li><a href="#">Song 2</a></li>
+        <li><a href="#">Song 3</a></li>
+        <!-- Add more songs here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Songbook Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
