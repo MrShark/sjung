@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <h1>{{ object.title }}</h1>
+    <p>
+        <span>Av:</span><span>{{ object.text_author }}</span>
+        <span>Melodi:</span><td>{{ object.melody }}</span>
+        <pre>{{ object.text }}</pre>
+        <span>Källa:</span><span>{{ object.source }}</span>
+        <span>Kommentarer:</span><span>{{ object.notes }}</span>
+</table>
+
+{% endblock %}

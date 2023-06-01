@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from sjung.songs import views
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("songs/", views.SongListView.as_view(), name="Song_list"),
+    path("song/<str:slug>/", views.SongDetailView.as_view(), name="Song_detail"),
 ]
