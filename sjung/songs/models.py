@@ -15,7 +15,8 @@ class Song(models.Model):
     source = models.CharField(max_length=100, blank=True)
 
     class Meta:
-        pass
+        verbose_name = "song"
+        verbose_name_plural = "songs"
 
     def __str__(self):
         return str(self.title)

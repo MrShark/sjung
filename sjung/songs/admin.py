@@ -7,7 +7,15 @@ from . import models
 class SongAdminForm(forms.ModelForm):
     class Meta:
         model = models.Song
-        fields = "__all__"
+        fields = [
+            "title",
+            "slug",
+            "text",
+            "text_author",
+            "notes",
+            "melody",
+            "source",
+        ]
 
 
 class SongAdmin(admin.ModelAdmin):
