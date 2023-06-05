@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load account %}
 <html>
 <head>
   <meta charset="UTF-8">
@@ -9,15 +10,20 @@
 </head>
 <body>
   <header>
-    <h1>Sjung med oss datorn</h1>
+    <h1><a href="/">Sjung med oss datorn</a></h1>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Songs</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="{% url 'Song_list' %}">Songs</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
+      {% if user.is_authenticated%}
+      <li>{{user.username}} <a href="{% url "account_logout" %}">Logout</a></li>
+      {%else%}
+      <li><a href="{% url "account_login" %}">Login</a></li>
+      {%endif%}
     </ul>
   </nav>
 
@@ -46,7 +52,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 Songbook Website. All rights reserved.</p>
+    <p>&copy; 2023 Sjung med oss datorn. All rights reserved.</p>
   </footer>
 </body>
 </html>
